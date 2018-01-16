@@ -1,0 +1,18 @@
+body {
+    background-color: black;
+    opacity: 40%;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: steelblue;
+}
+
+* {
+    box-sizing: border-box;
+    /*not calculating borders and margins*/
+}
+
+#section-description {
+    background-color: black;
+    color: steelblue;
+    font-family: Arial, Helvetica, sans-serif;
+}
