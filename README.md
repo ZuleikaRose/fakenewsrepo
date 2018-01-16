@@ -1,8 +1,10 @@
 # fakenewsrepo
 fake news repo opensource
 
+# Important!!
+# index_notes.js has node, express, cheerio, and request webscraper info for static websites.
 
-This is my notes more notes in live-server install.txt:
+# This ReadMe and live-server install.txt has casper.js and phantom.js webscraping notes (both incomplete) for nested javascript websites with the embeeded required info you need.
 
 
 
