@@ -1,0 +1,271 @@
+
+http://indecision.mead.io/
+
+
+
+setting up live public server:
+create a place for projects. Decide were you want the folder.
+
+r-04-02-web-server.zip
+extract react-course-projects
+create indecision app folder and open though vscode
+
+# cd into indecision-app folder
+create a public folder in the indecision app folder
+create a index.html file in the public folder
+
+on the terminal while in the indecision-app folder
+# sudo yarn global add live-server
+# live-server -v
+
+only if yarn does not work:
+on the terminal while in the indecision-app folder
+# sudo npm install -g live-server
+# live-server -v
+
+after this to launch the server:
+cd into the indecision app folder
+# live-server public
+(you will see something similar to 127.0.0.1:8080)
+*Note always cd into the folder above the public one which you want the live server to run xD
+
+
+# sudo npm install flow-bin -g <==== good to have
+# sudo npm -g install intellisense <==== good to have for command terminal
+# sudo npm install -g phantom --save
+# sudo npm install -g casperjs --save
+You can install CasperJS using npm: <== for webscrpaing
+
+    For most users (current version 1.1.0-beta4):
+
+        $ sudo npm install -g casperjs --save
+
+    If you want a specific older version:
+
+            For beta3: $ sudo npm install -g casperjs@1.1.0-beta3 --save
+            For beta2: $ sudo npm install -g casperjs@1.1.0-beta2 --save
+
+    If you want to install the current master from git using npm:
+
+        $ sudo npm install -g git+https://github.com/casperjs/casperjs.git
+
+
+
+/*While CasperJS is installable via npm, it is not a NodeJS module and will not work with NodeJS out of the box. You cannot load casper by using require(‘casperjs’) in node. Note that CasperJS is not capable of using a vast majority of NodeJS modules out there. Experiment and use your best judgement.*/
+
+http://docs.casperjs.org/en/latest/installation.html#installing-from-npm
+
+http://phantomjs.org/quick-start.html
+http://phantomjs.org/download.html
+
+How to set up phantomjs in a linux directory xD
+
+This looks complicated but it really isn’t.  Here’s the basic format:
+general format template:
+	
+alias aliasname='commands' 
+
+So This is how I did it on the last two lines:
+#
+# ~/.bashrc
+#
+
+# If not running interactively, don't do anything
+[[ $- != *i* ]] && return
+
+alias ls='ls --color=auto'
+PS1='[\u@\h \W]\$ ' 
+alias phantomjs="cd /run/media/zuleikarose/Alice\ My\ Book/MOOC/phantomjs-2.1.1-linux-x86_64/bin/ && ./phantomjs"
+
+
+
+============================================================================================
+https://sabe.io/tutorials/setting-up-local-web-server-node-js
+Never Miss a Post
+Connect with us
+
+    Share Tweet Share 
+
+When you're working on a site or app, there will be times when you need to test files as if they were being served from a remote web server, similar to how they are when you browse the web normally.
+
+If you don't have your own server, or just want to test files locally, you can set up a local web server on your computer to simulate to do the job, and this tutorial is here to teach you how.
+Install Node and NPM
+
+To run our local web server, we will be using Node.js, a JavaScript runtime.
+
+    Visit the official Node.js website to get the installer.
+    After it downloads, run the installer until the end.
+    Restart your computer to ensure the changes can take effect.
+
+The Node.js installer.
+The Node.js installer.
+
+The Node.js installer should have also installed NPM for you. To confirm that you have installed both properly, you'll need to open Windows Command Prompt if you're on Windows, or Terminal if you're on Mac or Linux.
+
+To check if you installed node:
+
+	
+    node -v
+	
+
+To check if you installed NPM:
+
+	
+    npm
+	
+
+If both of these commands return a version number, you're good to go.
+Install http-server
+
+Now that we have Node and NPM installed, we can move forward and install the Node module called http-server, which is a simple zero-configuration http server that serves up static files.
+
+	
+    npm install http-server -g
+	
+
+This command will install it on your computer globally so you can use it anywhere.
+
+There are a few options available to use, but for most purposes, using the -o flag is enough, which simply opens a browser window automatically for you.
+
+Therefore, after you have navigated to your folder via the command line, start the server using this command:
+
+	
+    http-server -o
+	
+
+If successful, you should see something similar to this:
+
+	
+    http-server -o
+    Starting up http-server, serving ./
+    Available on:
+        http://192.168.1.8:8080
+        http://127.0.0.1:8080
+    Hit CTRL-C to stop the server
+	
+
+Upon seeing this, a browser window should have opened for you automatically, but if not, you can manually head to http://127.0.0.1:8080 to see the folder that you used the command on being served up to you!
+
+============================================================================================================================================================================================
+
+I updated to the newest react installation:
+https://reactjs.org/blog/2017/11/28/react-v16.2.0-fragment-support.html
+
+# sudo npm install -g --save react@^16.2.0 react-dom@^16.2.0
+
+or 
+
+# sudo yarn add global --save react@^16.2.0 react-dom@^16.2.0
+
+
+if you want to use CDN:
+We also provide UMD builds of React via a CDN:
+
+<script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+
+
+============================================================================================
+============================================================================================
+NEXT  
+
+
+
+<!DOCTYPE html>
+
+<!--
+update: 11/10/17
+
+https://reactnavigation.org/docs/intro/nesting 
+
+Getting Started with React Navigation 
+
+# node 
+# node -v 
+# npm -v 
+# sudo npm install -g yarn 
+# yarn –version 
+
+Please have URLs and other info as a note on the page that refers to it. Thank you. http://indecision.mead.io/ https://github.com/andrewjmead/react-course-2-indecision-app 
+
+Andrew Mead course notes
+3 days ago  
+Reply  
+Link  
+Yup. Those are the correct URLs for the first app. The second app is at: http://expensify.mead.io/ https://github.com/andrewjmead/react-course-2-expensify-app 
+
+JavaScript XML xD 
+
+Development webserver download: 
+https://www.filepicker.io/api/file/Eo54CsMfRGy0ttNWZlmm 
+
+Plugins for vscode 
+Emmit plugin 
+
+https://completereactcourse.com/courses/217645/lectures/3382013   
+
+# sudo yarn global add live-server 
+# live-server -v 
+If you see the live version everything ok 
+
+optional 
+If you don't see the live-server version: 
+Then use this: 
+npm install -g live-server 
+
+Then run live-server -v to see if version pops up now that shows it is installed. 
+
+Launching application to web server:  
+We have to move the public folder from the extracted r-04-02-web-server folder to  newly created indecision app folder. He didn't explain this in the video as why I kept getting 404 error when launching from command line. 
+
+Your directory should have the following below: 
+/home/zuleikarose/opt/react-course-projects/indecision-app/public 
+
+# live-server public <-- you will see your output of the file you have been working on now in the browser. 
+http://127.0.0.1:8080 
+
+This has to be linked: 
+<script src="https://unpkg.com/react@16.0.0/umd/react.development.js"></script>  
+
+Install emmet if you do not have it. 
+
+  <!--<script src="https://unpkg.com/react@15/dist/react.js"></script>-->
+  <!--<script src="https://unpkg.com/react-dom@15/dist/react.js"></script>-->
+  <script src="https://unpkg.com/react@16.0.0/umd/react.development.js"></script>
+  <script src="https://unpkg.com/react-dom@16.0.0/umd/react-dom.development.js"></script>
+  <script src="/scripts/app.js"></script>
+  
+  console: React
+  console: ReactDOM
+  
+  
+  https://babeljs.io/repl/
+  
+  
+  
+  
+  
+  if the yarn was successful originally use this one:
+  # sudo yarn global add babel-cli@6.24.1
+  
+  if the original yarn from at the beginning of this course failed then install this one with npm:
+  # sudo npm install -g babel-cli@6.24.1
+  
+  now install presets locally:
+  react & env
+  
+  sudo yarn init
+  hit enter
+  hit enter
+  hit enter
+  hit enter
+  hit enter
+  author: type your name if you like
+  hit enter
+  it will autocompletes
+  
+  A new json file is added:
+  go back to terminal:
+  sudo yarn add babel-preset-react@6.24.1 babel-preset-env@1.5.2
+  do not edit yarn lock directly
+
